@@ -7,7 +7,7 @@ config()
 const router = Router()
 const pool = new pg.Pool({
     connectionString: process.env.DATABASE_URL,
-    ssl: true
+    //ssl: true
 })
 
 router.get('/', (req, res) =>res.render('index', {title: 'First web with Node'}))
